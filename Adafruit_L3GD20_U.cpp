@@ -122,7 +122,7 @@ bool Adafruit_L3GD20_Unified::begin(gyroRange_t rng, TwoWire *theWire)
   _i2c = theWire;
 
   /* Enable I2C */
-  _i2c->begin();
+  //_i2c->begin();
 
   /* Set the range the an appropriate value */
   _range = rng;
