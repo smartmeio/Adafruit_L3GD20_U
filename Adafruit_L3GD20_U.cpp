@@ -678,6 +678,6 @@ uint8_t Adafruit_L3GD20::SPIxfer(uint8_t x) {
   return value;
 }
 
-void Adafruit_L3GD20::power_down() {
+void Adafruit_L3GD20_Unified::power_down() {
   write8(GYRO_REGISTER_CTRL_REG1, 0x00);
 }

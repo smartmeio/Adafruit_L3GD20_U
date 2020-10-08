@@ -111,6 +111,7 @@ class Adafruit_L3GD20_Unified : public Adafruit_Sensor
     void enableAutoRange ( bool enabled );
     bool getEvent        ( sensors_event_t* );
     void getSensor       ( sensor_t* );
+    void power_down();
 
     /** Raw sensor data from the last successful read event. */
     gyroRawData_t raw;
@@ -149,7 +150,7 @@ class Adafruit_L3GD20
 
     bool begin ( l3gd20Range_t rng=GYRO_RANGE_250DPS, byte addr=L3GD20_ADDRESS );
     void read  ( void );
-    void power_down();
+    
 
     l3gd20Data data;    // Last read will be available here
 
