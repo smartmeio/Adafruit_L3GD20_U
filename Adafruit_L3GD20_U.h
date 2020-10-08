@@ -149,6 +149,7 @@ class Adafruit_L3GD20
 
     bool begin ( l3gd20Range_t rng=GYRO_RANGE_250DPS, byte addr=L3GD20_ADDRESS );
     void read  ( void );
+    void power_down();
 
     l3gd20Data data;    // Last read will be available here
 
